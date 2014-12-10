@@ -176,6 +176,33 @@
 	<!-- wrong info -->
 	    <c:if test="${not empty SPRING_SECURITY_LAST_EXCEPTION}">
 	      <font color="red">
+	        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	        Invalid Id or Password <br/><br/>
 	      </font>
     	</c:if>
