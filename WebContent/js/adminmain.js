@@ -63,7 +63,6 @@ adminmain.controller("Ticket", function($scope, $http ) {
 			newavailqty: newticket.availqty
 		});
 		
-		alert("hi");
 		$http({
 			method: "POST",
 			url: "http://localhost:8080/RTSProject/rest/adminupdateqty",
@@ -72,7 +71,6 @@ adminmain.controller("Ticket", function($scope, $http ) {
 			
 		}).success(function (data, status, headers, config) {
 			//$scope[resultVarName] = data;
-			alert("hi");
 			
 		}).error(function (data, status, headers, config) {
 			$scope[resultVarName] = "SUBMIT ERROR";
@@ -84,7 +82,6 @@ adminmain.controller("Ticket", function($scope, $http ) {
 		var params = $.param({ 	
 		});
 		
-		//alert("hi");
 		$http({
 			method: "POST",
 			url: "http://localhost:8080/RTSProject/rest/findallqty",
@@ -95,15 +92,11 @@ adminmain.controller("Ticket", function($scope, $http ) {
 			//$scope[resultVarName] = data;
 			if(angular.isArray(data.ticket)){
 				$scope.ticketqtys = data.ticket;
-				
 			}
-			
 			else{
 				$scope.ticketqtys[0]=data.ticket;
-				//alert("success");
 			}
 			$scope.canShowResult=true;
-			//alert("hi");
 			
 		}).error(function (data, status, headers, config) {
 			$scope[resultVarName] = "SUBMIT ERROR";
@@ -117,7 +110,6 @@ adminmain.controller("Ticket", function($scope, $http ) {
 		var params = $.param({ 	
 		});
 		
-		//alert("hi");
 		$http({
 			method: "POST",
 			url: "http://localhost:8080/RTSProject/rest/findallstation",
@@ -128,15 +120,11 @@ adminmain.controller("Ticket", function($scope, $http ) {
 			//$scope[resultVarName] = data;
 			if(angular.isArray(data.station)){
 				$scope.stationArray = data.station;
-				
 			}
-			
 			else{
 				$scope.arrivalStationArray[0]=data.station;
-				//alert("success");
 			}
 			$scope.canShowResult=true;
-			alert("hi");
 			
 		}).error(function (data, status, headers, config) {
 			$scope[resultVarName] = "SUBMIT ERROR";
@@ -220,7 +208,6 @@ adminmain.controller("Refund", function($scope, $http) {
 			ticketID: ticketIDInput,
 			qty: qtyInput
 		});
-		alert("hi");
 		$http({
 			method: "POST",
 			url: "http://localhost:8080/RTSProject/rest/admindorefund",
@@ -280,18 +267,14 @@ adminmain.controller("Station", function($scope, $http ) {
 			//$scope[resultVarName] = data;
 			if(angular.isArray(data.station)){
 				$scope.stations = data.station;
-				
 			}
-			
 			else{
 				$scope.stations[0]=data.station;
-				//alert("success");
 			}
 			$scope.canShowResult=true;
 			
 		}).error(function (data, status, headers, config) {
 			$scope[resultVarName] = "SUBMIT ERROR";
-			//alert("fail");
 		});
 	};
 	
@@ -312,7 +295,6 @@ adminmain.controller("Station", function($scope, $http ) {
 			$scope[resultVarName] = data;
 			$scope.message = data;
 			$scope.canShowNewResult=true;
-			alert($scope.message);
 		}).error(function (data, status, headers, config) {
 			$scope[resultVarName] = "SUBMIT ERROR";
 		});

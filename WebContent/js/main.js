@@ -152,8 +152,8 @@ app.controller('SearchCtrl', function ($scope, $window, $http) {
 				$scope.showRefund = false;
 			}
 			else{
-				$scope.showRefund = true;
 				$scope.ordereds[0]=data.ordered;
+				$scope.showRefund = true;
 			}
 
 
@@ -232,6 +232,7 @@ app.controller('SearchCtrl', function ($scope, $window, $http) {
 			price: ticket.price,
 			qty: $scope.user.adultsValue + $scope.user.seniorsValue + $scope.user.childrenValue 
 		});
+		//alert(ticket.ticketID);
 		alert("You successfully bought the ticket!");
 		$http({
 			method: "POST",

@@ -115,11 +115,6 @@
 		      		</form>
 				</div>
 			</div>
-			
-			<div ng-show=canShowNewResult>
-				<h2><font color="green" id="stationDiv2">You inserted a new station!</font></h2>
-				
-			</div>
 		</form>	
 	</tab>	
 	
